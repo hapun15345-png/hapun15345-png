@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XUE - Ice Cream & Drinks</title>
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f7fafc;
+            color: #333;
+        }
+        /* Header Hero Banner theo thiết kế */
+        .hero {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 20px;
+            border-bottom: 25px repeating-linear-gradient(90deg, #4ec0e9 0 20px, #fff 20px 40px);
+        }
+        .hero-img {
+            width: 280px;
+            height: 280px;
+            background-color: #cbebfa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+        .hero-img img {
+            max-height: 220px;
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .subtitle {
+            font-family: 'Fredoka', cursive;
+            color: #29b6f6;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .brand-title {
+            font-family: 'Fredoka', cursive;
+            color: #29b6f6;
+            font-size: 5rem;
+            line-height: 1;
+            margin: 10px 0 20px 0;
+            -webkit-text-stroke: 2px #29b6f6;
+            text-shadow: 2px 2px 0px #fff;
+        }
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            border: 2px solid #29b6f6;
+            border-radius: 30px;
+            color: #29b6f6;
+            text-decoration: none;
+            font-family: 'Fredoka', cursive;
+            font-size: 1.2rem;
+            transition: all 0.2s ease;
+        }
+        .btn-action:hover {
+            background-color: #29b6f6;
+            color: #fff;
+        }
+
+        /* Phần Menu sản phẩm */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-family: 'Fredoka', cursive;
+            color: #0288d1;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e1f5fe;
+        }
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .card .price {
+            color: #e53935;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #ffe0b2;
+            color: #e65100;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 12px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <header class="hero">
+        <div class="hero-img">
+            <img src="https://via.placeholder.com/150/81c784/ffffff?text=XUE+Ice+Cream" alt="XUE Ice Cream">
+        </div>
+        <div class="hero-content">
+            <span class="subtitle">ICE CREAM & DRINKS</span>
+            <h1 class="brand-title">XUE</h1>
+            <a href="#menu" class="btn-action">
+                Let'sa Go! <span>→</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <main class="container" id="menu">
+        <h2 class="section-title">Menu Giá Rẻ - Phục Vụ Nhanh</h2>
+        
+        <div class="menu-grid">
+            <!-- Món 1 -->
+            <div class="card">
+                <h3>Kem Ốc Quế XUE</h3>
+                <p class="price">18.000 VNĐ</p>
+                <span class="badge">Best Seller</span>
+            </div>
+            <!-- Món 2 -->
+            <div class="card">
+                <h3>Trà Sữa Trân Châu</h3>
+                <p class="price">22.000 VNĐ</p>
+                <span class="badge">Đậm Vị Trà</span>
+            </div>
+            <!-- Món 3 -->
+            <div class="card">
+                <h3>Trà Ô Long Nhài</h3>
+                <p class="price">25.000 VNĐ</p>
+                <span class="badge">Tùy chọn Đường/Đá</span>
+            </div>
+            <!-- Món 4 -->
+            <div class="card">
+                <h3>Trà Trái Cây Kem Cheese</h3>
+                <p class="price">32.000 VNĐ</p>
+                <span class="badge">Hot Trend</span>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
